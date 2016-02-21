@@ -6,7 +6,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 /**
- * Created by esutedja on 2/20/16.
+ * @author dsutedja
  */
 public class WebInterface {
     private Activity mActivity;
