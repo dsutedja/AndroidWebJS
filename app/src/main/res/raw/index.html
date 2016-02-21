@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('#heading').html("I'm called from JQuery!");
+                $('#btn_call').click(function() {
+                    Android.changeText("I'm changed by javascript!");
+                });
+            });
+
+            function android_changeText() {
+                $('#heading').html("I'm called from android!");
+            }
+        </script>
+
+        <style type="text/css">
+            body {
+                margin: 0;
+                background: #DCE9BE;
+            }
+
+            .container {
+                width: 90%;
+                margin: auto;
+                border: 1px solid #262626;
+                font-size: 0.9em;
+                font-family: Arial;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="heading">Hello!</h1>
+        <button id="btn_call">
+            Call Android
+        </button>
+
+        <div class="container">
+            This is a simple demo demonstrating how javascript and Android can communicate with each other. <br>
+            Click the 'Call android button' to call a method in WebInterface to change a TextView in the Android world. And click the <br>
+                'Call Javascript' button to change the text in javascript world from Android land.
+        </div>
+    </body>
+</html>
